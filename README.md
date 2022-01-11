@@ -10,16 +10,16 @@ You are tasked with creating a data-processing app that pre-processes and enrich
 3. As you can see, the data coming from crawlers is not 100% well-structured, the API should parse it correctly.
 4. a repeated submission with the data of the same year should perform an update on the existing yearly data.
 5. if there is any error in the submission or processing, the API should return a proper error message with proper HTTP response status
-6. For each university, enrich the data with a URL and a text description of it using Duckduckgo API
-e.g. https://api.duckduckgo.com/?q=harvard&format=json&pretty=1
+6. For each university, enrich the data with a URL and a text description of it using Duckduckgo API 
+e.g. https://api.duckduckgo.com/?q=harvard&format=json&pretty=1 (add columns?)
 7. The app inserts or updates **clean** data in 2 mongodb tables/collections:
 
  * table 1 - the yearly data table
  * table 2 - the universities info
 
-8. table 1 contains data from every year, table 2 contains only the latest data.
+8. table 1 contains data from every year, table 2 contains only the latest data. (How latest? last year/ 30 days/ 90 days?)
 9. the data processing and transformations should be covered by tests.
-10. The solution should be in Python programming language, however you may use any 3rd party library you like.
+10. The solution should be in Python programming language, however you may use any 3rd party library you like. (OK)
 
 Feel free to clarify the requirements further, if you have any doubts.
 
